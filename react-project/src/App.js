@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Func_JSX_NguyenHuuPhuc from './components/Func_JSX_NguyenHuuPhuc';
+import Class_NguyenHuuPhuc from './components/Class_NguyenHuuPhuc';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1>Hello</h1>
+        {/* function component demo */}
+        <Func_JSX_NguyenHuuPhuc/>
+        <Func_JSX_NguyenHuuPhuc fullName="NguyenHuuPhuc" age="20"/>
+      <hr/>
+      <Class_NguyenHuuPhuc info="Hoc ReactJs" time="4 months"/>
     </div>
   );
 }
